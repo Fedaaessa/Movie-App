@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+.root{
+    display: flex;
+    flex-direction: column;
+    
+}
+header{
+    display: flex;
+    padding: 1rem;
+    justify-content: flex-end;
+    background-color: #3e087bc5;
+}
+body{
+    background-color: #11052C;
+    color: white;
+    font-family: 'Noto Sans JP', 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+.searchbar{
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: 2px solid #9469f7;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    color: #ffffff;
+}
+.searchbar:focus{
+    outline: 0;
+}
+
+
+.movie{
+    background-color: #3e087bb0;
+    width: 250px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+
+}
+.app-nom{
+align-items: flex-end;
+font-size: 1rem;
+padding-left: 1rem;
+padding-right: 1rem;
+}
+.movie img{
+    height: 450px;
+    object-fit: cover;
+    width: 100%;
+}
+.movie-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movie-info{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.movie-info h3{
+   margin: 0;
+   font-family: 'Noto Sans JP', 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.movie-over{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.788);
+    position: absolute;
+color: black;
+padding: 1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    max-height: 100%;
+    transform: translateY(102%);
+    transition: transform 0.3s ease-in-out;
+}
+.movie:hover .movie-over{
+    transform: translateX(0%);
+
+}
+.movie-title{
+    font-size: 12px;
+}
+.tag {
+    background-color: #1e0653;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.tag.green{
+    color: rgb(37, 223, 37);
+}
+.tag.yellow{
+color: yellow ;
+}
+.tag.red{
+color: rgb(187, 33, 33);
+}
